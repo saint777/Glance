@@ -1,9 +1,150 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-</head>
-<body>
-
-</body>
+    <head>
+        <title>Глейси</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <header class="container">
+            <nav class="main-nav">
+                <img class="logo" alt="логотип GllacyShop - Глейси" src="./logo.svg" width="154" height="62">
+                <ul class="main-links">
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Доставка и оплата</a></a></li>
+                    <li><a href="#">О компании</a></li>
+                </ul>
+                <ul class="additional">
+                    <li class="search" aria-label="Поиск">⠀</li>
+                    <li class="login">Вход</li>
+                    <li class="cart">Пусто</li>
+                </ul>
+            </nav>
+            <div class="contacts">
+                    <span>С 10 до 20, ежедневно</span>
+                    <a href="tel:88124502525">8 812 450-25-25</a>
+            </div>
+        </header>
+        <div class="slider container">
+            <div class="slide" style="background-image: url(./bg.png)" data-bgcolor="#849D8F">
+                <h2>Крем-брюле и пломбир<br>с малиновым джемом</h2>
+                <button class="btn">Давайте оба!</button>
+            </div>
+            <div class="slide" style="background-image: url(./slide2.png)" data-bgcolor="#8996A6">
+                <h2>Шоколадный пломбир<br>и лимонный сорбет</h2>
+                <button class="btn">Давайте оба!</button>
+            </div>
+            <div class="slide active" style="background-image: url(./slide3.png)" data-bgcolor="#9D8B84">
+                <h2>Пломбир с помадкой<br>и клубничный щербет</h2>
+                <button class="btn">Давайте оба!</button>
+            </div>
+            <div class="controls">
+                <input type="radio" name="dot" checked/>
+                <input type="radio" name="dot"/>
+                <input type="radio" name="dot"/>
+            </div>
+        </div>
+        <main class="container">
+            <ul class="offers">
+                <li style="background-image: url(./images/malina.jpg)">
+                    <h2>Малинка даром!</h2>
+                    <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                    <button class="btn btn-sm">Хочу варенье!</button>
+                </li>
+                <li style="background-image: url(./images/chocolate.jpg)">
+                    <h2>Шоколадки даром!</h2>
+                    <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+                    <button class="btn btn-sm">Хочу шоколадки!</button>
+                </li>
+            </ul>
+            <ul class="products">
+                <li class="hit">
+                    <img alt="сливочное с апельсиновым джемом и цитрусовой стружкой" src="./images/products/1.jpg">
+                    <div class="price">310<span class="ruble"></span><span class="mass">/кг</span></div>
+                    <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                </li>
+                <li class="hit">
+                    <img alt="сливочное с апельсиновым джемом и цитрусовой стружкой" src="./images/products/2.jpg">
+                    <div class="price">380<span class="ruble"></span><span class="mass">/кг</span></div>
+                    <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                </li>
+                <li class="hit">
+                    <img alt="сливочное с апельсиновым джемом и цитрусовой стружкой" src="./images/products/3.jpg">
+                    <div class="price">355<span class="ruble"></span><span class="mass">/кг</span></div>
+                    <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                </li>
+                <li class="hit">
+                    <img alt="сливочное с апельсиновым джемом и цитрусовой стружкой" src="./images/products/4.jpg">
+                    <div class="price">415<span class="ruble"></span><span class="mass">/кг</span></div>
+                    <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                </li>
+            </ul>
+            <ul class="site-info">
+                <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+                <li>
+                    <span class="icon-icecream"></span>
+                    <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                </li>
+                <li>
+                    <span class="icon-cow"></span>
+                    <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.<p>
+                    </li>
+                <li>
+                    <span class="icon-natural"></span>
+                    <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.<p>
+                </li>
+                <li>
+                    <span class="icon-thermometer"></span>
+                    <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.<p>
+                </li>
+            </ul>
+            <ul class="blog-email">
+                <li class="latest-blog" style="background-image: url(./images/blog/XXXX1.jpg)">
+                    <h3>Новое в нашем блоге</h3>
+                    <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+                </li>
+                <li class="mail-subscr">
+                    <form>
+                        <p class="info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                        <input type="email" name="emailaddress" placeholder="example@yandex.ru">
+                        <button type="submit" class="btn btn-sm">Отправить</button>
+                    </form>
+                </li>
+            </ul>
+        </main>
+        <div class="map">
+            <div class="container clearfix">
+                <div class="map-contacts">
+                    <p>Адрес главного офиса<br>и офлайн-магазина:<br><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+                    <p>Для заказов по телефону:</p>
+                    <p><b>8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
+                    <button class="btn btn-sm">Форма обратной связи</button>
+                </div>
+            </div>
+        </div>
+        <footer class="container">
+            <div class="footer social">
+                <a class="tw" href="https://twitter.com/" aria-label="Twitter"></a>
+                <a class="ig" href="https://instagram.com/" aria-label="Instagram"></a>
+                <a class="fb" href="https://facebook.com/" aria-label="Facebook"></a>
+                <a class="vk" href="https://vk.com/" aria-label="ВКонтакте"></a>
+            </div>
+            <div class="footer links">
+                <ul>
+                    <li><a href="#" class="love">Для поставщиков</a></li>
+                    <li><a href="#">О производстве</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Наши документы</a></li>
+                    <li><a href="#">Экологические стандарты</a></li>
+                </ul>
+            </div>
+            <div class="footer copyright">
+                <div class="footer-logo"></div>
+                <span>Сделано в <a href="#">HTML Academy</a> &copy; 2019</span>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./main.js"></script>
+    </body>
 </html>
